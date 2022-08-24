@@ -1,5 +1,7 @@
  --made by xkeyx
-
+ print('Welcome To Clar's UI')
+ wait(5)
+print('suscessfully executed')
  local ScreenGui = Instance.new("ScreenGui")
  local Main = Instance.new("Frame")
  local UIGradient = Instance.new("UIGradient")
@@ -58,7 +60,9 @@
  pfp.BorderSizePixel = 5
  pfp.Position = UDim2.new(0.0271493215, 0, 0.0349344984, 0)
  pfp.Size = UDim2.new(0, 103, 0, 79)
- pfp.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ local UserId = plr.UserId
+pfp.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
+
  
  label.Name = "label"
  label.Parent = Main
@@ -69,6 +73,11 @@
  label.Font = Enum.Font.Arcade
  label.TextColor3 = Color3.fromRGB(0, 0, 0)
  label.TextSize = 31.000
+ local player = game.players.local
+
+ if player then
+    script.Parent.Text = ""..player..""
+ end
 
  UIName.Name = "UI Name"
  UIName.Parent = Main
@@ -148,6 +157,7 @@
  TextLabel.TextSize = 14.000
  TextLabel.TextWrapped = true
  
+ 
  CMDS.Name = "CMDS"
  CMDS.Parent = Frame
  CMDS.BackgroundColor3 = Color3.fromRGB(221, 221, 221)
@@ -225,9 +235,3 @@
  
  -- Scripts:
  
- local username = plr.DisplayName
-label.username.Text = username -- change the thing underneath welcome, text obv
-
-
-local UserId = plr.UserId
-pfp.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
