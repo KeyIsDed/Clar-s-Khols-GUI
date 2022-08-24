@@ -1,7 +1,10 @@
  --made by xkeyx
- print('Welcome To Clar's UI')
- wait(5)
-print('suscessfully executed')
+
+print('Welcome To Clars GUI')
+    wait(5)
+    print('suscessfully executed')
+
+
  local ScreenGui = Instance.new("ScreenGui")
  local Main = Instance.new("Frame")
  local UIGradient = Instance.new("UIGradient")
