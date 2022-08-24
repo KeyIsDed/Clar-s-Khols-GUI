@@ -1,243 +1,247 @@
  --made by xkeyx
 
-local ScreenGui = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
-local UICorner = Instance.new("UICorner")
-local minus = Instance.new("ImageButton")
-local pfp = Instance.new("ImageLabel")
-local label = Instance.new("TextLabel")
-local UIName = Instance.new("TextLabel")
-local UIName_Roundify_12px = Instance.new("ImageLabel")
-local Frame = Instance.new("Frame")
-local Shortcut = Instance.new("TextButton")
-local Shadow = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local CMDS = Instance.new("TextButton")
-local Shadow_2 = Instance.new("Frame")
-local TextLabel_2 = Instance.new("TextLabel")
-local Button = Instance.new("TextButton")
-local Shadow_3 = Instance.new("Frame")
-local TextLabel_3 = Instance.new("TextLabel")
-
---Properties:
-
-ScreenGui.Parent = game.CoreGui
-
-Main.Name = "Main"
-Main.Parent = ScreenGui
-Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.372539818, 0, 0.26861167, 0)
-Main.Size = UDim2.new(0, 442, 0, 253)
-Main.Active = true
-Main.Draggable = true
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(224, 43, 39)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(168, 3, 3))}
-UIGradient.Parent = Main
-
-UICorner.CornerRadius = UDim.new(0, 4)
-UICorner.Parent = Main
-
-minus.Name = "minus"
-minus.Parent = Main
-minus.Active = false
-minus.BackgroundTransparency = 1.000
-minus.Position = UDim2.new(-0.194570154, 0, 0.307775974, 0)
-minus.Size = UDim2.new(0, 592, 0, 25)
-minus.ZIndex = 2
-minus.Image = "rbxassetid://6764432408"
-minus.ImageRectOffset = Vector2.new(100, 950)
-minus.ImageRectSize = Vector2.new(50, 50)
-
-pfp.Name = "pfp"
-pfp.Parent = Main
-pfp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-pfp.BackgroundTransparency = 1.000
-pfp.BorderSizePixel = 5
-pfp.Position = UDim2.new(0.0271493215, 0, 0.0349344984, 0)
-pfp.Size = UDim2.new(0, 103, 0, 79)
-pfp.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
-label.Name = "label"
-label.Parent = Main
-label.BackgroundColor3 = Color3.fromRGB(177, 3, 3)
-label.BackgroundTransparency = 1.000
-label.Position = UDim2.new(0.27375567, 0, 0.153252646, 0)
-label.Size = UDim2.new(0, 116, 0, 18)
-label.Font = Enum.Font.Arcade
-label.TextColor3 = Color3.fromRGB(0, 0, 0)
-label.TextSize = 31.000
-
-UIName.Name = "UI Name"
-UIName.Parent = Main
-UIName.BackgroundColor3 = Color3.fromRGB(182, 0, 0)
-UIName.BackgroundTransparency = 1.000
-UIName.BorderSizePixel = 0
-UIName.Position = UDim2.new(0, 0, 0.932806313, 0)
-UIName.Size = UDim2.new(0, 441, 0, 17)
-UIName.Font = Enum.Font.Arcade
-UIName.Text = "Clar's UI | Khols Admin NBC"
-UIName.TextColor3 = Color3.fromRGB(0, 0, 0)
-UIName.TextSize = 14.000
-
-UIName_Roundify_12px.Name = "UI Name_Roundify_12px"
-UIName_Roundify_12px.Parent = UIName
-UIName_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
-UIName_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UIName_Roundify_12px.BackgroundTransparency = 1.000
-UIName_Roundify_12px.Position = UDim2.new(0.502267599, 0, -0.2058824, 0)
-UIName_Roundify_12px.Size = UDim2.new(1, 0, 0.411764711, 0)
-UIName_Roundify_12px.Image = "rbxassetid://3570695787"
-UIName_Roundify_12px.ImageColor3 = Color3.fromRGB(182, 0, 0)
-UIName_Roundify_12px.ScaleType = Enum.ScaleType.Slice
-UIName_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
-UIName_Roundify_12px.SliceScale = 0.120
-
-Frame.Parent = Main
-Frame.BackgroundColor3 = Color3.fromRGB(239, 0, 0)
-Frame.Position = UDim2.new(0.0271493215, 0, 0.406590223, 0)
-Frame.Size = UDim2.new(0, 417, 0, 114)
-
-Shortcut.Name = "Shortcut"
-Shortcut.Parent = Frame
-Shortcut.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Shortcut.BorderSizePixel = 0
-Shortcut.Position = UDim2.new(0.855539799, 0, 0.999783695, 0)
-Shortcut.Size = UDim2.new(0, 71, 0, 8)
-Shortcut.ZIndex = 2
-Shortcut.Font = Enum.Font.GothamMedium
-Shortcut.Text = ""
-Shortcut.TextColor3 = Color3.fromRGB(255, 255, 255)
-Shortcut.TextScaled = true
-Shortcut.TextSize = 14.000
-Shortcut.TextWrapped = true
-Shortcut.MouseButton1Down:Connect(function()
-	--[[
-The script is for Kohls Admin House NBC only. (BC support has officially stopped)
-We also use a webhook for execution logs
-You can buy premium at the #premium channel (way more features)
-discord.gg/shortcut
-
-Prefix: //
-]]
-
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Qltxi/SCV2/main/Obfuscated%20SCV2-NP'),true))()
-end)
-
-Shadow.Name = "Shadow"
-Shadow.Parent = Shortcut
-Shadow.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Shadow.BorderSizePixel = 0
-Shadow.Size = UDim2.new(1, 0, 1, 4)
-
-TextLabel.Parent = Shortcut
-TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.487341762, 0, 0.5, 0)
-TextLabel.Size = UDim2.new(1, -20, 1, -20)
-TextLabel.ZIndex = 2
-TextLabel.Font = Enum.Font.GothamMedium
-TextLabel.Text = "Shortcut"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-CMDS.Name = "CMDS"
-CMDS.Parent = Frame
-CMDS.BackgroundColor3 = Color3.fromRGB(221, 221, 221)
-CMDS.BorderSizePixel = 0
-CMDS.Position = UDim2.new(0.0299760196, 0, 0.0789473653, 0)
-CMDS.Size = UDim2.new(0, 112, 0, 40)
-CMDS.ZIndex = 2
-CMDS.Font = Enum.Font.GothamMedium
-CMDS.Text = ""
-CMDS.TextColor3 = Color3.fromRGB(255, 255, 255)
-CMDS.TextScaled = true
-CMDS.TextSize = 14.000
-CMDS.TextWrapped = true
-CMDS.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/KeyIsDed/Clar-s-Khols-GUI/main/CMDS'),true))()
-end)
-
-Shadow_2.Name = "Shadow"
-Shadow_2.Parent = CMDS
-Shadow_2.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
-Shadow_2.BorderSizePixel = 0
-Shadow_2.Size = UDim2.new(1, 0, 1, 4)
-
-TextLabel_2.Parent = CMDS
-TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextLabel_2.Size = UDim2.new(1, -20, 1, -20)
-TextLabel_2.ZIndex = 2
-TextLabel_2.Font = Enum.Font.GothamMedium
-TextLabel_2.Text = "CMDS"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 100.000
-TextLabel_2.TextWrapped = true
-
-Button.Name = "Button"
-Button.Parent = Frame
-Button.BackgroundColor3 = Color3.fromRGB(221, 221, 221)
-Button.BorderSizePixel = 0
-Button.Position = UDim2.new(0.365707487, 0, 0.0789473653, 0)
-Button.Size = UDim2.new(0, 112, 0, 35)
-Button.ZIndex = 2
-Button.Font = Enum.Font.GothamMedium
-Button.Text = ""
-Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button.TextScaled = true
-Button.TextSize = 14.000
-Button.TextWrapped = true
-
-Shadow_3.Name = "Shadow"
-Shadow_3.Parent = Button
-Shadow_3.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
-Shadow_3.BorderSizePixel = 0
-Shadow_3.Size = UDim2.new(1, 0, 1, 4)
-
-TextLabel_3.Parent = Button
-TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextLabel_3.Size = UDim2.new(1, -20, 1, -20)
-TextLabel_3.ZIndex = 2
-TextLabel_3.Font = Enum.Font.GothamMedium
-TextLabel_3.Text = "TextButton"
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
-
--- Scripts:
-
-local function JVMQ_fake_script() -- pfp.LocalScript 
-	local script = Instance.new('LocalScript', pfp)
-
-	local UserId = plr.UserId
-	info.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
-	
-end
-coroutine.wrap(JVMQ_fake_script)()
-local function ILCLQN_fake_script() -- label.Script 
-	local script = Instance.new('Script', label)
-
-	local username = plr.DisplayName
-	info.username.Text = username -- change the thing underneath welcome, text obv
-end
-coroutine.wrap(ILCLQN_fake_script)()
-
+ local ScreenGui = Instance.new("ScreenGui")
+ local Main = Instance.new("Frame")
+ local UIGradient = Instance.new("UIGradient")
+ local UICorner = Instance.new("UICorner")
+ local minus = Instance.new("ImageButton")
+ local pfp = Instance.new("ImageLabel")
+ local label = Instance.new("TextLabel")
+ local UIName = Instance.new("TextLabel")
+ local UIName_Roundify_12px = Instance.new("ImageLabel")
+ local Frame = Instance.new("Frame")
+ local Shortcut = Instance.new("TextButton")
+ local Shadow = Instance.new("Frame")
+ local TextLabel = Instance.new("TextLabel")
+ local CMDS = Instance.new("TextButton")
+ local Shadow_2 = Instance.new("Frame")
+ local TextLabel_2 = Instance.new("TextLabel")
+ local Button = Instance.new("TextButton")
+ local Shadow_3 = Instance.new("Frame")
+ local TextLabel_3 = Instance.new("TextLabel")
+ 
+ --Properties:
+ 
+ ScreenGui.Parent = game.CoreGui
+ 
+ Main.Name = "Main"
+ Main.Parent = ScreenGui
+ Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ Main.BorderSizePixel = 0
+ Main.Position = UDim2.new(0.372539818, 0, 0.26861167, 0)
+ Main.Size = UDim2.new(0, 442, 0, 253)
+ Main.Active = true
+ Main.Draggable = true
+ 
+ UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(224, 43, 39)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(168, 3, 3))}
+ UIGradient.Parent = Main
+ 
+ UICorner.CornerRadius = UDim.new(0, 4)
+ UICorner.Parent = Main
+ 
+ minus.Name = "minus"
+ minus.Parent = Main
+ minus.Active = false
+ minus.BackgroundTransparency = 1.000
+ minus.Position = UDim2.new(-0.194570154, 0, 0.307775974, 0)
+ minus.Size = UDim2.new(0, 592, 0, 25)
+ minus.ZIndex = 2
+ minus.Image = "rbxassetid://6764432408"
+ minus.ImageRectOffset = Vector2.new(100, 950)
+ minus.ImageRectSize = Vector2.new(50, 50)
+ 
+ pfp.Name = "pfp"
+ pfp.Parent = Main
+ pfp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ pfp.BackgroundTransparency = 1.000
+ pfp.BorderSizePixel = 5
+ pfp.Position = UDim2.new(0.0271493215, 0, 0.0349344984, 0)
+ pfp.Size = UDim2.new(0, 103, 0, 79)
+ pfp.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ local UserId = plr.UserId
+info.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
+ 
+ label.Name = "label"
+ label.Parent = Main
+ label.BackgroundColor3 = Color3.fromRGB(177, 3, 3)
+ label.BackgroundTransparency = 1.000
+ label.Position = UDim2.new(0.27375567, 0, 0.153252646, 0)
+ label.Size = UDim2.new(0, 116, 0, 18)
+ label.Font = Enum.Font.Arcade
+ label.TextColor3 = Color3.fromRGB(0, 0, 0)
+ label.TextSize = 31.000
+ local username = plr.DisplayName
+info.username.Text = username -- change the thing underneath welcome, text obv
+ 
+ UIName.Name = "UI Name"
+ UIName.Parent = Main
+ UIName.BackgroundColor3 = Color3.fromRGB(182, 0, 0)
+ UIName.BackgroundTransparency = 1.000
+ UIName.BorderSizePixel = 0
+ UIName.Position = UDim2.new(0, 0, 0.932806313, 0)
+ UIName.Size = UDim2.new(0, 441, 0, 17)
+ UIName.Font = Enum.Font.Arcade
+ UIName.Text = "Clar's UI | Khols Admin NBC"
+ UIName.TextColor3 = Color3.fromRGB(0, 0, 0)
+ UIName.TextSize = 14.000
+ 
+ UIName_Roundify_12px.Name = "UI Name_Roundify_12px"
+ UIName_Roundify_12px.Parent = UIName
+ UIName_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+ UIName_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ UIName_Roundify_12px.BackgroundTransparency = 1.000
+ UIName_Roundify_12px.Position = UDim2.new(0.502267599, 0, -0.2058824, 0)
+ UIName_Roundify_12px.Size = UDim2.new(1, 0, 0.411764711, 0)
+ UIName_Roundify_12px.Image = "rbxassetid://3570695787"
+ UIName_Roundify_12px.ImageColor3 = Color3.fromRGB(182, 0, 0)
+ UIName_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+ UIName_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+ UIName_Roundify_12px.SliceScale = 0.120
+ 
+ Frame.Parent = Main
+ Frame.BackgroundColor3 = Color3.fromRGB(239, 0, 0)
+ Frame.Position = UDim2.new(0.0271493215, 0, 0.406590223, 0)
+ Frame.Size = UDim2.new(0, 417, 0, 114)
+ 
+ Shortcut.Name = "Shortcut"
+ Shortcut.Parent = Frame
+ Shortcut.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+ Shortcut.BorderSizePixel = 0
+ Shortcut.Position = UDim2.new(0.855539799, 0, 0.999783695, 0)
+ Shortcut.Size = UDim2.new(0, 71, 0, 8)
+ Shortcut.ZIndex = 2
+ Shortcut.Font = Enum.Font.GothamMedium
+ Shortcut.Text = ""
+ Shortcut.TextColor3 = Color3.fromRGB(255, 255, 255)
+ Shortcut.TextScaled = true
+ Shortcut.TextSize = 14.000
+ Shortcut.TextWrapped = true
+ Shortcut.MouseButton1Down:Connect(function()
+     --[[
+ The script is for Kohls Admin House NBC only. (BC support has officially stopped)
+ We also use a webhook for execution logs
+ You can buy premium at the #premium channel (way more features)
+ discord.gg/shortcut
+ 
+ Prefix: //
+ ]]
+ 
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/Qltxi/SCV2/main/Obfuscated%20SCV2-NP'),true))()
+ end)
+ 
+ Shadow.Name = "Shadow"
+ Shadow.Parent = Shortcut
+ Shadow.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ Shadow.BorderSizePixel = 0
+ Shadow.Size = UDim2.new(1, 0, 1, 4)
+ 
+ TextLabel.Parent = Shortcut
+ TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ TextLabel.BackgroundTransparency = 1.000
+ TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ TextLabel.BorderSizePixel = 0
+ TextLabel.Position = UDim2.new(0.487341762, 0, 0.5, 0)
+ TextLabel.Size = UDim2.new(1, -20, 1, -20)
+ TextLabel.ZIndex = 2
+ TextLabel.Font = Enum.Font.GothamMedium
+ TextLabel.Text = "Shortcut"
+ TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ TextLabel.TextScaled = true
+ TextLabel.TextSize = 14.000
+ TextLabel.TextWrapped = true
+ 
+ CMDS.Name = "CMDS"
+ CMDS.Parent = Frame
+ CMDS.BackgroundColor3 = Color3.fromRGB(221, 221, 221)
+ CMDS.BorderSizePixel = 0
+ CMDS.Position = UDim2.new(0.0299760196, 0, 0.0789473653, 0)
+ CMDS.Size = UDim2.new(0, 112, 0, 40)
+ CMDS.ZIndex = 2
+ CMDS.Font = Enum.Font.GothamMedium
+ CMDS.Text = ""
+ CMDS.TextColor3 = Color3.fromRGB(255, 255, 255)
+ CMDS.TextScaled = true
+ CMDS.TextSize = 14.000
+ CMDS.TextWrapped = true
+ CMDS.MouseButton1Down:Connect(function()
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/KeyIsDed/Clar-s-Khols-GUI/main/CMDS'),true))()
+ end)
+ 
+ Shadow_2.Name = "Shadow"
+ Shadow_2.Parent = CMDS
+ Shadow_2.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+ Shadow_2.BorderSizePixel = 0
+ Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+ 
+ TextLabel_2.Parent = CMDS
+ TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ TextLabel_2.BackgroundTransparency = 1.000
+ TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ TextLabel_2.BorderSizePixel = 0
+ TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+ TextLabel_2.Size = UDim2.new(1, -20, 1, -20)
+ TextLabel_2.ZIndex = 2
+ TextLabel_2.Font = Enum.Font.GothamMedium
+ TextLabel_2.Text = "CMDS"
+ TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ TextLabel_2.TextScaled = true
+ TextLabel_2.TextSize = 100.000
+ TextLabel_2.TextWrapped = true
+ 
+ Button.Name = "Button"
+ Button.Parent = Frame
+ Button.BackgroundColor3 = Color3.fromRGB(221, 221, 221)
+ Button.BorderSizePixel = 0
+ Button.Position = UDim2.new(0.365707487, 0, 0.0789473653, 0)
+ Button.Size = UDim2.new(0, 112, 0, 35)
+ Button.ZIndex = 2
+ Button.Font = Enum.Font.GothamMedium
+ Button.Text = ""
+ Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+ Button.TextScaled = true
+ Button.TextSize = 14.000
+ Button.TextWrapped = true
+ 
+ Shadow_3.Name = "Shadow"
+ Shadow_3.Parent = Button
+ Shadow_3.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+ Shadow_3.BorderSizePixel = 0
+ Shadow_3.Size = UDim2.new(1, 0, 1, 4)
+ 
+ TextLabel_3.Parent = Button
+ TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+ TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ TextLabel_3.BackgroundTransparency = 1.000
+ TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ TextLabel_3.BorderSizePixel = 0
+ TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+ TextLabel_3.Size = UDim2.new(1, -20, 1, -20)
+ TextLabel_3.ZIndex = 2
+ TextLabel_3.Font = Enum.Font.GothamMedium
+ TextLabel_3.Text = "TextButton"
+ TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+ TextLabel_3.TextScaled = true
+ TextLabel_3.TextSize = 14.000
+ TextLabel_3.TextWrapped = true
+ 
+ -- Scripts:
+ 
+ local function JVMQ_fake_script() -- pfp.LocalScript 
+     local script = Instance.new('LocalScript', pfp)
+ 
+     local UserId = plr.UserId
+     info.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
+     
+ end
+ coroutine.wrap(JVMQ_fake_script)()
+ local function ILCLQN_fake_script() -- label.Script 
+     local script = Instance.new('Script', label)
+ 
+     local username = plr.DisplayName
+     info.username.Text = username -- change the thing underneath welcome, text obv
+ end
+ coroutine.wrap(ILCLQN_fake_script)()
+ 
