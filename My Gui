@@ -59,6 +59,8 @@
  pfp.Position = UDim2.new(0.0271493215, 0, 0.0349344984, 0)
  pfp.Size = UDim2.new(0, 103, 0, 79)
  pfp.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ local UserId = plr.UserId
+pfp.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
  
  label.Name = "label"
  label.Parent = Main
@@ -69,6 +71,8 @@
  label.Font = Enum.Font.Arcade
  label.TextColor3 = Color3.fromRGB(0, 0, 0)
  label.TextSize = 31.000
+ local username = plr.DisplayName
+label.username.Text = username -- change the thing underneath welcome, text obv
  
  UIName.Name = "UI Name"
  UIName.Parent = Main
@@ -162,7 +166,7 @@
  CMDS.TextSize = 14.000
  CMDS.TextWrapped = true
  CMDS.MouseButton1Down:Connect(function()
-     loadstring(game:HttpGet('https://raw.githubusercontent.com/quivings/cmdy/main/main'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quivings/cmdy/main/main'))()
  end)
  
  Shadow_2.Name = "Shadow"
