@@ -162,7 +162,7 @@
  CMDS.TextSize = 14.000
  CMDS.TextWrapped = true
  CMDS.MouseButton1Down:Connect(function()
-     loadstring(game:HttpGet(('https://raw.githubusercontent.com/KeyIsDed/Clar-s-Khols-GUI/main/CMDS'),true))()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/quivings/cmdy/main/main'))()
  end)
  
  Shadow_2.Name = "Shadow"
