@@ -59,8 +59,6 @@
  pfp.Position = UDim2.new(0.0271493215, 0, 0.0349344984, 0)
  pfp.Size = UDim2.new(0, 103, 0, 79)
  pfp.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
- local UserId = plr.UserId
-pfp.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
  
  label.Name = "label"
  label.Parent = Main
@@ -71,9 +69,7 @@ pfp.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..U
  label.Font = Enum.Font.Arcade
  label.TextColor3 = Color3.fromRGB(0, 0, 0)
  label.TextSize = 31.000
- local username = plr.DisplayName
-label.username.Text = username -- change the thing underneath welcome, text obv
- 
+
  UIName.Name = "UI Name"
  UIName.Parent = Main
  UIName.BackgroundColor3 = Color3.fromRGB(182, 0, 0)
@@ -229,19 +225,9 @@ label.username.Text = username -- change the thing underneath welcome, text obv
  
  -- Scripts:
  
- local function JVMQ_fake_script() -- pfp.LocalScript 
-     local script = Instance.new('LocalScript', pfp)
- 
-     local UserId = plr.UserId
-     info.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
-     
- end
- coroutine.wrap(JVMQ_fake_script)()
- local function ILCLQN_fake_script() -- label.Script 
-     local script = Instance.new('Script', label)
- 
-     local username = plr.DisplayName
-     info.username.Text = username -- change the thing underneath welcome, text obv
- end
- coroutine.wrap(ILCLQN_fake_script)()
- 
+ local username = plr.DisplayName
+label.username.Text = username -- change the thing underneath welcome, text obv
+
+
+local UserId = plr.UserId
+pfp.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
