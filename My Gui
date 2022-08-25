@@ -144,8 +144,8 @@ CMDS.TextColor3 = Color3.fromRGB(255, 255, 255)
 CMDS.TextScaled = true
 CMDS.TextSize = 14.000
 CMDS.TextWrapped = true
-CMDS.MouseButton1Down:Connect(function
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/quivings/cmdy/main/main'))()
+CMDS.MouseButton1Down:Connect(function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quivings/cmdy/main/main'))()
 end)
 
 Shadow_2.Name = "Shadow"
@@ -224,7 +224,6 @@ pfp.BackgroundTransparency = 1.000
 pfp.BorderSizePixel = 5
 pfp.Position = UDim2.new(0.114678897, 0, 0.165886834, 0)
 pfp.Size = UDim2.new(0, 88, 0, 57)
-pfp.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 local UserId = game.Players.LocalPlayer.UserId
 pfp.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
 
