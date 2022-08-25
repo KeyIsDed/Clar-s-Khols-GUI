@@ -59,9 +59,8 @@
  pfp.BorderSizePixel = 5
  pfp.Position = UDim2.new(0.0271493215, 0, 0.0349344984, 0)
  pfp.Size = UDim2.new(0, 103, 0, 79)
+ pfp.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-
- 
  label.Name = "label"
  label.Parent = Main
  label.BackgroundColor3 = Color3.fromRGB(177, 3, 3)
@@ -71,11 +70,6 @@
  label.Font = Enum.Font.Arcade
  label.TextColor3 = Color3.fromRGB(0, 0, 0)
  label.TextSize = 31.000
- local player = game.players.local
-
- if player then
-    script.Parent.Text = ""..player..""
- end
 
  UIName.Name = "UI Name"
  UIName.Parent = Main
