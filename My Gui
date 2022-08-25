@@ -59,8 +59,7 @@
  pfp.BorderSizePixel = 5
  pfp.Position = UDim2.new(0.0271493215, 0, 0.0349344984, 0)
  pfp.Size = UDim2.new(0, 103, 0, 79)
- local UserId = plr.UserId
-pfp.profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..UserId.."&width=60&height=60&format=png" -- pfp thing
+
 
  
  label.Name = "label"
